@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+table, th, td {
+border: 1px solid black;
+border-collapse:collapse;
+}
+th, td {
+padding: 5px;
+}
+</style>
+</head>
+<body>
+<script>
+if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome,Opera, Safari
+xmlhttp = new XMLHttpRequest();
+}
+else {// code for IE6, IE5
+xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.open("GET", "xml_staff.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+document.write("<table><tr><th>IDWorker</th><th>Surname</th><th>Name</th><th>MiddleName</th><th>Function</th><th>EmploymentDate</th></tr>");
+var x = xmlDoc.getElementsByTagName("Worker");
+for (i = 0; i < x.length; i++) {
+document.write("<tr><td>");
+document.write(x[i].getElementsByTagName("IDWorker")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+document.write(x[i].getElementsByTagName("Surname")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+document.write(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+document.write(x[i].getElementsByTagName("MiddleName")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+document.write(x[i].getElementsByTagName("Function")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+document.write(x[i].getElementsByTagName("EmploymentDate")[0].childNodes[0].nodeValue);
+document.write("</td></tr>");
+}
+document.write("</table>");
+</script>
+</body>
+</html>
