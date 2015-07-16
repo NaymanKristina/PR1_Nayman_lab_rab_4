@@ -1,0 +1,44 @@
+# PR1_Nayman_lab_rab_4
+<?xml version="1.0" encoding="utf-8"?>
+<Staff xmlns="xsd_staff.xsd"> <!--xsd -->
+<Worker>
+<IDWorker>1</IDWorker>
+<Surname>Bizayeva</Surname>
+<Name>Ekaterina</Name>
+<MiddleName>Andreevna</MiddleName>
+<Function>Driver</Function>
+<EmploymentDate>2015-07-14</EmploymentDate>
+</Worker>
+<Worker>
+<IDWorker>2</IDWorker>
+<Surname>Perminova</Surname>
+<Name>Mariya</Name>
+<MiddleName>Ivanovna</MiddleName>
+<Function>Engineer</Function>
+<EmploymentDate>2015-07-01</EmploymentDate>
+</Worker>
+<Worker>
+<IDWorker>3</IDWorker>
+<Surname>Levuczkay</Surname>
+<Name>Nadezgda</Name>
+<MiddleName>Alecsandrovna</MiddleName>
+<Function>Ticher</Function>
+<EmploymentDate>2015-03-12</EmploymentDate>
+</Worker>
+<Worker>
+<IDWorker>4</IDWorker>
+<Surname>Kolupaeva</Surname>
+<Name>Uliay</Name>
+<MiddleName>Sergeevna</MiddleName>
+<Function>Dancer</Function>
+<EmploymentDate>2015-01-26</EmploymentDate>
+</Worker>
+<Worker>
+<IDWorker>5</IDWorker>
+<Surname>Saitova</Surname>
+<Name>Kseniay</Name>
+<MiddleName>Vaycheslavovna</MiddleName>
+<Function>Programist</Function>
+<EmploymentDate>2015-02-23</EmploymentDate>
+</Worker>
+</Staff>
