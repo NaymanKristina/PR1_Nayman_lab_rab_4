@@ -1,0 +1,36 @@
+<html>
+<body>
+<h1>Сотрудники</h1>
+<div>
+<b>IDWorker:</b> <span id="IDWorker"></span><br />
+<b>Surname:</b> <span id="Surname"></span><br />
+<b>Name:</b> <span id="Name"></span><br />
+<b>MiddleName:</b> <span id="MiddleName"></span><br />
+<b>Function:</b> <span id="Function"></span><br />
+<b>EmploymentDate:</b> <span id="EmploymentDate"></span>
+</div>
+<script>
+if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome,Opera, Safari
+xmlhttp = new XMLHttpRequest();
+}
+else {// code for IE6, IE5
+xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.open("GET", "xml_staff.xml", false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+document.getElementById("IDWorker").innerHTML =
+xmlDoc.getElementsByTagName("IDWorker")[0].childNodes[0].nodeValue;
+document.getElementById("Surname").innerHTML =
+xmlDoc.getElementsByTagName("Surname")[0].childNodes[0].nodeValue;
+document.getElementById("Name").innerHTML =
+xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+document.getElementById("MiddleName").innerHTML =
+xmlDoc.getElementsByTagName("MiddleName")[0].childNodes[0].nodeValue;
+document.getElementById("Function").innerHTML =
+xmlDoc.getElementsByTagName("Function")[0].childNodes[0].nodeValue;
+document.getElementById("EmploymentDate").innerHTML =
+xmlDoc.getElementsByTagName("EmploymentDate")[0].childNodes[0].nodeValue;
+</script>
+</body>
+</html>
